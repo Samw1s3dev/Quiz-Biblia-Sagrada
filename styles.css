@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  background-color: #0d0d0e;
+  color: #ebebe8;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.container {
+  background-color: #050505;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.round-info {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #bbb;
+}
+
+.question {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  min-height: 70px;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.options li {
+  background: #222;
+  border-radius: 5px;
+  margin: 0.45rem 0;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+  user-select: none;
+}
+
+.options li:hover {
+  background-color: #333;
+}
+
+.options li.selected {
+  border-color: #1e35ff;
+  background-color: #1e90ff33;
+}
+
+button.next-btn {
+  background-color: #1e90ff;
+  border: none;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+button.next-btn:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+button.next-btn:hover:not(:disabled) {
+  background-color: #d66f0f;
+}
+
+.results {
+  text-align: left;
+}
+
+.results h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.results p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.wrong-list {
+  margin-top: 1rem;
+}
+
+.wrong-list li {
+  margin-bottom: 1rem;
+  background-color: #222;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+}
+
+.wrong-list strong {
+  color: #ff6b6b;
+}
